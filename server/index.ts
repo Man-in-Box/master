@@ -1,9 +1,12 @@
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as nanoid from 'nanoid';
+import * as cors from 'cors';
 
 const app = express();
 const port: number = 3000;
+
+app.use(cors());
 
 interface iPostSchema {
 	title: string,
