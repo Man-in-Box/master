@@ -1,0 +1,14 @@
+<div class="col-md-8 offset-md-2">
+    <h1 class="text-center">Send Post</h1>
+    <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" [(ngModel)]="post.title" />
+    </div>
+    <div class="form-group">
+        <label>Text</label>
+        <input class="form-control" type="text" [(ngModel)]="post.text" />
+    </div>
+    <div class="form-group text-center">
+        <button class="btn btn-default btn-primary" (click)="submit(post)">Send</button>
+    </div>
+</div>
